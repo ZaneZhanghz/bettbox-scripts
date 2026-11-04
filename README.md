@@ -7,10 +7,15 @@ Bettbox（FlClash 系，Mihomo 内核）专用的 JS 覆写脚本：一份脚本
 Bettbox → 配置 → 选中订阅 → 覆写/脚本 → 通过 URL 导入，粘贴：
 
 ```
-https://cdn.jsdelivr.net/gh/ZaneZhanghz/bettbox-scripts@main/bettbox-override-v4.6-share.js
+https://raw.githubusercontent.com/ZaneZhanghz/bettbox-scripts/main/bettbox-override-v4.6-share.js
 ```
 
-导入后在该订阅上启用此脚本即可。脚本更新后，在 Bettbox 里对该脚本执行一次更新即可拉取新版，无需重新导入。
+备用镜像（若 jsDelivr 返回 404，请使用上方 raw 链接）：
+```
+https://cdn.jsdelivr.net/gh/ZaneZhanghz/bettbox-scripts@main/bettbox-override-v4.6-share.js
+ ```
+
+ 导入后在该订阅上启用此脚本即可。脚本更新后，在 Bettbox 里对该脚本执行一次更新即可拉取新版，无需重新导入。
 
 ## 主要功能
 
@@ -22,7 +27,8 @@ https://cdn.jsdelivr.net/gh/ZaneZhanghz/bettbox-scripts@main/bettbox-override-v4
 ## 关于本分享版
 
 - 本文件已**清空作者个人的私有 DoH 兜底值**（`PRIVATE_DNS` 登记表中的两处 `doh` 字段），逻辑与个人版完全一致。
-- 对单独导入的 Nowhere / Doro 订阅：其自带 DoH 会被自动识别，**开箱即用，无需填写任何东西**。
+- 对单独导入的 Nowhere / Doro 订阅：其自带 DoH 会被自动识别，**开箱即用，无需填写任何东西*
+- *。
 - 对合并订阅（多机场拼成一份、且合并产物的 DNS 中不含任何机场 DoH）：自动识别无从下手，此时需要使用者把**自己**的兜底 DoH 填进登记表对应行；不填则那两家"私有解析"节点的连接会失败，其余节点不受影响。
 - 新增机场只需在 `PRIVATE_DNS` 登记表加一行（域名后缀 + 该机场的 DoH），其余逻辑自动完成。
 
