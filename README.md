@@ -7,7 +7,7 @@ Bettbox（FlClash 系，Mihomo 内核）专用的 JS 覆写脚本：一份脚本
 Bettbox → 配置 → 选中订阅 → 覆写/脚本 → 通过 URL 导入，粘贴：
 
 ```
-https://cdn.jsdelivr.net/gh/<用户名>/bettbox-scripts@main/bettbox-override-v4.6-share.js
+https://cdn.jsdelivr.net/gh/ZaneZhanghz/bettbox-scripts@main/bettbox-override-v4.6-share.js
 ```
 
 导入后在该订阅上启用此脚本即可。脚本更新后，在 Bettbox 里对该脚本执行一次更新即可拉取新版，无需重新导入。
